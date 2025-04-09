@@ -1,0 +1,10 @@
+#nome città e animale
+città = input("nome città")
+animale = input("nome animale")
+
+#nome band
+nome_band = f"{citta}   {animale}"
+
+#risultato
+
+print{f" il nome della tua band e: {nome_band}"}
