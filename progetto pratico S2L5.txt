@@ -1,0 +1,33 @@
+1import datetime
+2def assistente_virtuale(comando):
+3   if comando == "Qual è la data di oggi?":
+4       oggi = datetime.datetoday()
+5       risposta = "La data di oggi è " + oggi.strftime("%d/%m/%Y")
+5   elif comando == "Che ore sono?":
+6       ora_attuale = datetime.datetime.now().time()
+7       risposta = "L'ora attuale è " + ora_attuale.strftime("%H:%M")
+8   elif comando == "Come ti chiami?":
+9       risposta = "Mi chiamo Assistente Virtuale"
+10  else:
+11      risposta = "Non ho capito la tua domanda."
+12  return risposta
+13while True
+14  comando_utente = input("Cosa vuoi sapere? ")
+15  if comando_utente.lower() == "esci":
+16      print("Arrivederci!")
+17      break
+18  else:
+19      print(assistente_virtuale(comando_utente))
+
+
+  
+Il codice di questo programma rappresenta la funzionalità di assistente virtuale a cui puoi chiedere il giorno e l'ora esatta
+Nella stesura di questo codice ho notato alcuni errori:
+                                    1) il primo errore che ho notato è che manca un punto tra nella riga 4 tra date e today, correzione----> oggi=datetime.date.today 
+                                    2) il secondo errore è dopo ''While true'', andrebbero messi i : dopo True dato che simboleggiano l'inizio di un'indentazione
+                                    3) varie casistiche non gestite, esempio input vuoti (usiamo più parole chiave)
+                                    4) il terzo errore notato è nella riga 6 ''ora_attuale = datetime.datetime.now().time()''
+                                                CORREZIONE
+                                    ora_attuale = datetime.now().strftime("%H:%M") utilizzando questa funzione avremo il formato desiderato in modo più efficente
+                                    5) alcuni input sono troppo rigidi, nel caso la domanda venga posta diversamente il programma non comprende
+                                      implementare il metodo ''.lower'' per ignorare le maiuscole 
