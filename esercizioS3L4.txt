@@ -1,0 +1,8 @@
+Esercizio di decifratura
+
+1) HSNFRGH
+1) Soluzione: utilizzando il cifrario di Cesare tornando indietro di 3 lettere
+si ottiene la parole: Epicode 
+2) QWJhIHZ6b2VidHl2bmdyIHB1ciB6ciBhciBucHBiZXRi
+2) utilizzando su kali cifrario base64 prima e poi rot3 si ottiene: Non imbrogliate
+che me ne accorgo
